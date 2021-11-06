@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot入門</title>
+</head>
+<body>
+	<p>トップ画面</p>
+	こんにちは<span th:text="${name}"></span>さん<br>
+
+	<form method="post" action="/index">
+		<input name="testInput" type="text">
+		<button type="submit">送信</button>
+	</form>
+
+    <p th:text="${testInput}"></p>
+</body>
+</html>
+
